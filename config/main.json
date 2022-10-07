@@ -1,0 +1,20 @@
+
+
+{
+    "token":        "Bot Token",
+    "ownerId":      ["252425284488396803"],
+    "ignorelist":   [],
+    "database":{
+        "host":     "db Server Ip",
+        "port":     "3306",
+        "username": "pterobot",
+        "password": "db User Password",
+        "dbname":   "pterobot"
+    },
+    "panel":{
+        "allowRegistration":    true,
+        "url":                  "Your pterodactyl URL",
+        "applicationKey":       "Your admin application key",
+        "useragent":            "pterobot"
+    }
+}
