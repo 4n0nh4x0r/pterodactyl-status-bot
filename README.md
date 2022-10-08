@@ -25,8 +25,8 @@ Install dependencies
 npm i
 ```
 
-Edit Config 
-```
+Edit Config
+```json
 {
     "token":        "Bot Token",        <-- enter your discord bot token here
     "ownerId":      [],
@@ -41,7 +41,7 @@ Edit Config
     "panel":{                           <-- The panel information
         "allowRegistration":    true,
         "url":                  "Your pterodactyl URL",
-        "applicationKey":       "Your admin application key", 
+        "applicationKey":       "Your admin application key",
         "useragent":            "pterobot"
     }
 }
@@ -69,6 +69,7 @@ Start the bot
 ```
 
 You will need to add the bot to one of your servers  
+Make sure that the bot is added also with `applications.commands` as scope  
 Next you type in `g/reload` or `gslashreload` into the console of your bot and hit enter (This will provision all the servers the bot is on with its slash commands (This can take a little while))  
 
 Once the slash commands are available, you can now use the `/register` command with the client key parameter, here you enter a client key to your account that you want to link with the bot  
