@@ -2,11 +2,11 @@
 
 var pool = mysql.createPool({
     connectionLimit : 10,
-    host: config.database.host,
-    port: config.database.port,
-    user: config.database.username,
-    password: config.database.password,
-    database: config.database.dbname,
+    host: mainconfig.database.host,
+    port: mainconfig.database.port,
+    user: mainconfig.database.username,
+    password: mainconfig.database.password,
+    database: mainconfig.database.dbname,
     charset : 'utf8mb4'
 });
 

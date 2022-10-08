@@ -7,11 +7,13 @@ client    = new Discord.Client({
 })
 
 fs                  = require("fs")
-config              = require("./config/main.json")
+mainconfig          = require("./config/main.json")
 readline            = require("readline")
 MessageAttachment   = { XXXXXXXXXXXXXXXX, MessageAttachment } = require('discord.js')
 mysql               = require("mysql")
 fetch               = require("node-fetch")
+Hashids             = require("hashids/cjs")
+hashids             = new Hashids("", 6)
 
 MessageActionRow    = Discord.MessageActionRow;
 MessageButton       = Discord.MessageButton;

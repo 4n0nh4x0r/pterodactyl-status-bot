@@ -90,12 +90,11 @@ folders.forEach(element => {
 
 // console.log(commands)
 
-client.login(config.token);
+client.login(mainconfig.token);
 
-var ignorelist  = config.ignorelist
-var prefix      = config.prefix;
+var ignorelist  = mainconfig.ignorelist
+var prefix      = mainconfig.prefix;
 var platform    = process.platform;
-// var main_config = client.commands.get("redis").function("getValJSON", "main_config");
 
 client.on("ready", () => {
     commands.get("Startup_function").function()

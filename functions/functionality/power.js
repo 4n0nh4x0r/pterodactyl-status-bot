@@ -37,7 +37,7 @@ module.exports = {
         )
 
         ,
-    slashcommandGlobal:false,
+    slashcommandGlobal:true,
     async function(interactionObject) {
         let ephemeral = interactionObject.options.getString("visibility")
         let action    = interactionObject.options.getString("action")

@@ -25,7 +25,7 @@ module.exports = {
         )
 
         ,
-    slashcommandGlobal:false,
+    slashcommandGlobal:true,
     async function(interactionObject) {
         let ephemeral = interactionObject.options.getString("visibility")
         let serverid  = interactionObject.options.getString("server_identifier")
