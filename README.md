@@ -52,6 +52,7 @@ You need to create a bot application on discord and get the token for said bot t
 #### Database
 You can use the same database server as the one you use for the panel  
 This bot however requires you to set up a second database which is very small in size and wont put any further strain on your server  
+You will find the `pterobot.sql` file in the main directory, run this on the database Server  
 Best practice here is to create a new user account for this database that will only need access to the new database with select, insert and update permissions, that way even if someone would get access, they couldnt really do any harm
 #### Panel
 Here you now add the information required to access the panel  
