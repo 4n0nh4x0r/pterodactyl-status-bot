@@ -54,25 +54,25 @@ module.exports = {
 
 
 
-            fetch(`${config.panel.url}/api/client/servers/${serverid}`,{
+            fetch(`${mainconfig.panel.url}/api/client/servers/${serverid}`,{
                 "method": "GET",
                 "headers": {
                     "Accept": "application/json",
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${await commands.get("profile_handler").getKey(interactionObject)}`,
-                    'User-Agent': `${config.panel.useragent}`,
+                    'User-Agent': `${mainconfig.panel.useragent}`,
                 }
             })
             .then(async response => {
                 response = await response.json()
 
-                var response2 = await fetch(`${config.panel.url}/api/client/servers/${serverid}/resources`,{
+                var response2 = await fetch(`${mainconfig.panel.url}/api/client/servers/${serverid}/resources`,{
                     "method": "GET",
                     "headers": {
                         "Accept": "application/json",
                         "Content-Type": "application/json",
                         "Authorization": `Bearer ${await commands.get("profile_handler").getKey(interactionObject)}`,
-                        'User-Agent': `${config.panel.useragent}`,
+                        'User-Agent': `${mainconfig.panel.useragent}`,
                     }
                 })
 
@@ -116,13 +116,13 @@ module.exports = {
 
 
 
-        fetch(`${config.panel.url}/api/client`,{
+        fetch(`${mainconfig.panel.url}/api/client`,{
             "method": "GET",
             "headers": {
                 "Accept": "application/json",
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${await commands.get("profile_handler").getKey(interactionObject)}`,
-                'User-Agent': `${config.panel.useragent}`,
+                'User-Agent': `${mainconfig.panel.useragent}`,
             }
         })
         .then(async response => {

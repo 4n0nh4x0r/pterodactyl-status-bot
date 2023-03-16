@@ -73,13 +73,13 @@ module.exports = {
                 return;
         }
 
-        fetch(`${config.panel.url}/api/client/servers/${serverid}/power`,{
+        fetch(`${mainconfig.panel.url}/api/client/servers/${serverid}/power`,{
             "method": "POST",
             "headers": {
                 "Accept": "application/json",
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${await commands.get("profile_handler").getKey(interactionObject)}`,
-                'User-Agent': `${config.panel.useragent}`,
+                'User-Agent': `${mainconfig.panel.useragent}`,
             },
             "body": JSON.stringify({
                 "signal": `${action}`

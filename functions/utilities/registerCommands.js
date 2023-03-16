@@ -7,7 +7,7 @@ module.exports = {
             const { REST } = require('@discordjs/rest');
             const { Routes } = require('discord-api-types/v10');
 
-            const token = config.token
+            const token = mainconfig.token
 
             const commandsList = []
 
